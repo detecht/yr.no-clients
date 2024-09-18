@@ -2,11 +2,15 @@ This will generate clients according to the yr.no swagger file.
 
 ## Download latest swagger file
 
-`npm run retrieve` and then add `"host": "api.met.no",` at the top of the json blob in the file `swagger.json` that was retrieved.
+```bash
+./retrieve.sh
+```
 
 ## Generate clients
 
-`npm run generate`
+```bash
+./generate.sh
+```
 
 ## Clients
 
