@@ -14,22 +14,22 @@ This will generate clients according to the yr.no swagger file.
 
 ## Clients
 
-## Node
+### Node
 
-### Install
+#### Install
 ```bash
-npm install yr.no-client
+npm install @detecht/yr.no-client
 ```
-### Example usage
+#### Example usage
 
 ```typescript
-import { DataApiFactory, Configuration } from "yr.no-node-client"
+import { DataApiFactory, Configuration } from "@detecht/yr.no-client"
 
 const run = async () => {
   const config = new Configuration({
     baseOptions: {
       headers: {
-        "User-Agent": "yr.no-node-client",
+        "User-Agent": "<yr requires your own user-agent>",
       },
     },
   })
