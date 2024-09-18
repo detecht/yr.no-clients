@@ -1,5 +1,5 @@
 {
-  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "$schema": "https://raw.githubusercontent.com/OpenAPITools/openapi-generator-cli/master/apps/generator-cli/src/config.schema.json",
   "spaces": 2,
   "generator-cli": {
     "version": "7.7.0",
@@ -8,10 +8,15 @@
         "generatorName": "typescript-axios",
         "glob": "swagger.json",
         "output": "clients/node/yr.no-client",
+        "gitHost": "github.com",
+        "gitUserId": "detecht",
+        "gitRepoId": "yr.no-clients",
         "additionalProperties": {
           "disallowAdditionalPropertiesIfNotPresent": false,
           "enumPropertyNaming": "PascalCase",
-          "npmName": "yr.no-client",
+          "npmVersion": "1.0.0",
+          "npmName": "@detecht/yr.no-client",
+          "npmRepository": "https://npm.pkg.github.com",
           "supportsES6": true
         }
       }

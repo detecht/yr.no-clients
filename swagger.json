@@ -1,5 +1,4 @@
 {
-  "host": "api.met.no",
   "basePath": "/weatherapi/locationforecast/2.0",
   "definitions": {
     "Forecast": {
