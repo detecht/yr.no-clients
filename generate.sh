@@ -2,6 +2,6 @@
 
 npx @openapitools/openapi-generator-cli generate
 
-pushd clients/node/yr.no-client
+pushd clients/node/yr.no-locationforecast
 npm install
 popd

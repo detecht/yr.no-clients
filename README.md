@@ -1,4 +1,4 @@
-This will generate clients according to the yr.no swagger file.
+This will generate clients according to the yr.no locationforecast swagger file.
 
 ## Download latest swagger file
 
@@ -18,12 +18,12 @@ This will generate clients according to the yr.no swagger file.
 
 #### Install
 ```bash
-npm install @detecht/yr.no-client
+npm install @detecht/yr.no-locationforecast
 ```
 #### Example usage
 
 ```typescript
-import { DataApiFactory, Configuration } from "@detecht/yr.no-client"
+import { DataApiFactory, Configuration } from "@detecht/yr.no-locationforecast"
 
 const run = async () => {
   const config = new Configuration({

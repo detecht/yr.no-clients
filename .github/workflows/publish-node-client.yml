@@ -10,7 +10,7 @@ jobs:
       packages: write
     defaults:
       run:
-        working-directory: "clients/node/yr.no-client"
+        working-directory: "clients/node/yr.no-locationforecast"
     steps:
       - uses: actions/checkout@v4
 

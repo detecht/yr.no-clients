@@ -7,15 +7,15 @@
       "node-client": {
         "generatorName": "typescript-axios",
         "glob": "swagger.json",
-        "output": "clients/node/yr.no-client",
+        "output": "clients/node/yr.no-locationforecast",
         "gitHost": "github.com",
         "gitUserId": "detecht",
-        "gitRepoId": "yr.no-clients",
+        "gitRepoId": "yr.no-locationforecast-clients",
         "additionalProperties": {
           "disallowAdditionalPropertiesIfNotPresent": false,
           "enumPropertyNaming": "PascalCase",
           "npmVersion": "1.0.0",
-          "npmName": "@detecht/yr.no-client",
+          "npmName": "@detecht/yr.no-locationforecast",
           "npmRepository": "https://npm.pkg.github.com",
           "supportsES6": true
         }
