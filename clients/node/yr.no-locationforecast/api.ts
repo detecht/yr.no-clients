@@ -483,11 +483,13 @@ export interface METJSONForecast {
     'type': METJSONForecastTypeEnum;
 }
 
-export const METJSONForecastTypeEnum = {
-    Feature: 'Feature'
-} as const;
-
-export type METJSONForecastTypeEnum = typeof METJSONForecastTypeEnum[keyof typeof METJSONForecastTypeEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum METJSONForecastTypeEnum {
+    Feature = 'Feature'
+}
 
 /**
  * 
@@ -509,11 +511,13 @@ export interface PointGeometry {
     'type': PointGeometryTypeEnum;
 }
 
-export const PointGeometryTypeEnum = {
-    Point: 'Point'
-} as const;
-
-export type PointGeometryTypeEnum = typeof PointGeometryTypeEnum[keyof typeof PointGeometryTypeEnum];
+/**
+    * @export
+    * @enum {string}
+    */
+export enum PointGeometryTypeEnum {
+    Point = 'Point'
+}
 
 /**
  * A identifier that sums up the weather condition for this time period, see documentation.
@@ -1402,40 +1406,40 @@ export class DataApi extends BaseAPI {
 }
 
 /**
- * @export
- */
-export const ClassicFormatGetFormatEnum = {
-    Xml: 'xml'
-} as const;
-export type ClassicFormatGetFormatEnum = typeof ClassicFormatGetFormatEnum[keyof typeof ClassicFormatGetFormatEnum];
+  * @export
+  * @enum {string}
+  */
+export enum ClassicFormatGetFormatEnum {
+    Xml = 'xml'
+}
 /**
- * @export
- */
-export const CompactFormatGetFormatEnum = {
-    Json: 'json'
-} as const;
-export type CompactFormatGetFormatEnum = typeof CompactFormatGetFormatEnum[keyof typeof CompactFormatGetFormatEnum];
+  * @export
+  * @enum {string}
+  */
+export enum CompactFormatGetFormatEnum {
+    Json = 'json'
+}
 /**
- * @export
- */
-export const CompleteFormatGetFormatEnum = {
-    Json: 'json'
-} as const;
-export type CompleteFormatGetFormatEnum = typeof CompleteFormatGetFormatEnum[keyof typeof CompleteFormatGetFormatEnum];
+  * @export
+  * @enum {string}
+  */
+export enum CompleteFormatGetFormatEnum {
+    Json = 'json'
+}
 /**
- * @export
- */
-export const MiniFormatGetFormatEnum = {
-    Json: 'json'
-} as const;
-export type MiniFormatGetFormatEnum = typeof MiniFormatGetFormatEnum[keyof typeof MiniFormatGetFormatEnum];
+  * @export
+  * @enum {string}
+  */
+export enum MiniFormatGetFormatEnum {
+    Json = 'json'
+}
 /**
- * @export
- */
-export const StatusFormatGetFormatEnum = {
-    Json: 'json'
-} as const;
-export type StatusFormatGetFormatEnum = typeof StatusFormatGetFormatEnum[keyof typeof StatusFormatGetFormatEnum];
+  * @export
+  * @enum {string}
+  */
+export enum StatusFormatGetFormatEnum {
+    Json = 'json'
+}
 
 
 /**

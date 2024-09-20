@@ -14,7 +14,7 @@
         "additionalProperties": {
           "disallowAdditionalPropertiesIfNotPresent": false,
           "enumPropertyNaming": "PascalCase",
-          "npmVersion": "1.0.0",
+          "npmVersion": "1.0.1",
           "npmName": "@detecht/yr.no-locationforecast",
           "npmRepository": "https://npm.pkg.github.com",
           "supportsES6": true,
