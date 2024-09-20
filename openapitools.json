@@ -17,7 +17,8 @@
           "npmVersion": "1.0.0",
           "npmName": "@detecht/yr.no-locationforecast",
           "npmRepository": "https://npm.pkg.github.com",
-          "supportsES6": true
+          "supportsES6": true,
+          "stringEnums": true
         }
       }
     }
