@@ -1,6 +1,6 @@
 {
   "name": "@detecht/yr.no-locationforecast",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "OpenAPI client for @detecht/yr.no-locationforecast",
   "author": "OpenAPI-Generator Contributors",
   "repository": {
