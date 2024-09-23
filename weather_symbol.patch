@@ -1,0 +1,12 @@
+diff --git a/swagger.json b/swagger.json
+index dc534c2..7673263 100644
+--- a/swagger.json
++++ b/swagger.json
+@@ -378,6 +378,7 @@
+       "type": "object"
+     },
+     "WeatherSymbol": {
++      "type": "string",
+       "description": "A identifier that sums up the weather condition for this time period, see documentation.",
+       "enum": [
+         "clearsky_day",
