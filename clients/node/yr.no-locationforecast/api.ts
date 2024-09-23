@@ -483,13 +483,11 @@ export interface METJSONForecast {
     'type': METJSONForecastTypeEnum;
 }
 
-/**
-    * @export
-    * @enum {string}
-    */
-export enum METJSONForecastTypeEnum {
-    Feature = 'Feature'
-}
+export const METJSONForecastTypeEnum = {
+    Feature: 'Feature'
+} as const;
+
+export type METJSONForecastTypeEnum = typeof METJSONForecastTypeEnum[keyof typeof METJSONForecastTypeEnum];
 
 /**
  * 
@@ -511,23 +509,107 @@ export interface PointGeometry {
     'type': PointGeometryTypeEnum;
 }
 
-/**
-    * @export
-    * @enum {string}
-    */
-export enum PointGeometryTypeEnum {
-    Point = 'Point'
-}
+export const PointGeometryTypeEnum = {
+    Point: 'Point'
+} as const;
+
+export type PointGeometryTypeEnum = typeof PointGeometryTypeEnum[keyof typeof PointGeometryTypeEnum];
 
 /**
  * A identifier that sums up the weather condition for this time period, see documentation.
  * @export
- * @interface WeatherSymbol
+ * @enum {string}
  */
-export interface WeatherSymbol {
-    [key: string]: any;
 
-}
+export const WeatherSymbol = {
+    ClearskyDay: 'clearsky_day',
+    ClearskyNight: 'clearsky_night',
+    ClearskyPolartwilight: 'clearsky_polartwilight',
+    FairDay: 'fair_day',
+    FairNight: 'fair_night',
+    FairPolartwilight: 'fair_polartwilight',
+    LightssnowshowersandthunderDay: 'lightssnowshowersandthunder_day',
+    LightssnowshowersandthunderNight: 'lightssnowshowersandthunder_night',
+    LightssnowshowersandthunderPolartwilight: 'lightssnowshowersandthunder_polartwilight',
+    LightsnowshowersDay: 'lightsnowshowers_day',
+    LightsnowshowersNight: 'lightsnowshowers_night',
+    LightsnowshowersPolartwilight: 'lightsnowshowers_polartwilight',
+    Heavyrainandthunder: 'heavyrainandthunder',
+    Heavysnowandthunder: 'heavysnowandthunder',
+    Rainandthunder: 'rainandthunder',
+    HeavysleetshowersandthunderDay: 'heavysleetshowersandthunder_day',
+    HeavysleetshowersandthunderNight: 'heavysleetshowersandthunder_night',
+    HeavysleetshowersandthunderPolartwilight: 'heavysleetshowersandthunder_polartwilight',
+    Heavysnow: 'heavysnow',
+    HeavyrainshowersDay: 'heavyrainshowers_day',
+    HeavyrainshowersNight: 'heavyrainshowers_night',
+    HeavyrainshowersPolartwilight: 'heavyrainshowers_polartwilight',
+    Lightsleet: 'lightsleet',
+    Heavyrain: 'heavyrain',
+    LightrainshowersDay: 'lightrainshowers_day',
+    LightrainshowersNight: 'lightrainshowers_night',
+    LightrainshowersPolartwilight: 'lightrainshowers_polartwilight',
+    HeavysleetshowersDay: 'heavysleetshowers_day',
+    HeavysleetshowersNight: 'heavysleetshowers_night',
+    HeavysleetshowersPolartwilight: 'heavysleetshowers_polartwilight',
+    LightsleetshowersDay: 'lightsleetshowers_day',
+    LightsleetshowersNight: 'lightsleetshowers_night',
+    LightsleetshowersPolartwilight: 'lightsleetshowers_polartwilight',
+    Snow: 'snow',
+    HeavyrainshowersandthunderDay: 'heavyrainshowersandthunder_day',
+    HeavyrainshowersandthunderNight: 'heavyrainshowersandthunder_night',
+    HeavyrainshowersandthunderPolartwilight: 'heavyrainshowersandthunder_polartwilight',
+    SnowshowersDay: 'snowshowers_day',
+    SnowshowersNight: 'snowshowers_night',
+    SnowshowersPolartwilight: 'snowshowers_polartwilight',
+    Fog: 'fog',
+    SnowshowersandthunderDay: 'snowshowersandthunder_day',
+    SnowshowersandthunderNight: 'snowshowersandthunder_night',
+    SnowshowersandthunderPolartwilight: 'snowshowersandthunder_polartwilight',
+    Lightsnowandthunder: 'lightsnowandthunder',
+    Heavysleetandthunder: 'heavysleetandthunder',
+    Lightrain: 'lightrain',
+    RainshowersandthunderDay: 'rainshowersandthunder_day',
+    RainshowersandthunderNight: 'rainshowersandthunder_night',
+    RainshowersandthunderPolartwilight: 'rainshowersandthunder_polartwilight',
+    Rain: 'rain',
+    Lightsnow: 'lightsnow',
+    LightrainshowersandthunderDay: 'lightrainshowersandthunder_day',
+    LightrainshowersandthunderNight: 'lightrainshowersandthunder_night',
+    LightrainshowersandthunderPolartwilight: 'lightrainshowersandthunder_polartwilight',
+    Heavysleet: 'heavysleet',
+    Sleetandthunder: 'sleetandthunder',
+    Lightrainandthunder: 'lightrainandthunder',
+    Sleet: 'sleet',
+    LightssleetshowersandthunderDay: 'lightssleetshowersandthunder_day',
+    LightssleetshowersandthunderNight: 'lightssleetshowersandthunder_night',
+    LightssleetshowersandthunderPolartwilight: 'lightssleetshowersandthunder_polartwilight',
+    Lightsleetandthunder: 'lightsleetandthunder',
+    PartlycloudyDay: 'partlycloudy_day',
+    PartlycloudyNight: 'partlycloudy_night',
+    PartlycloudyPolartwilight: 'partlycloudy_polartwilight',
+    SleetshowersandthunderDay: 'sleetshowersandthunder_day',
+    SleetshowersandthunderNight: 'sleetshowersandthunder_night',
+    SleetshowersandthunderPolartwilight: 'sleetshowersandthunder_polartwilight',
+    RainshowersDay: 'rainshowers_day',
+    RainshowersNight: 'rainshowers_night',
+    RainshowersPolartwilight: 'rainshowers_polartwilight',
+    Snowandthunder: 'snowandthunder',
+    SleetshowersDay: 'sleetshowers_day',
+    SleetshowersNight: 'sleetshowers_night',
+    SleetshowersPolartwilight: 'sleetshowers_polartwilight',
+    Cloudy: 'cloudy',
+    HeavysnowshowersandthunderDay: 'heavysnowshowersandthunder_day',
+    HeavysnowshowersandthunderNight: 'heavysnowshowersandthunder_night',
+    HeavysnowshowersandthunderPolartwilight: 'heavysnowshowersandthunder_polartwilight',
+    HeavysnowshowersDay: 'heavysnowshowers_day',
+    HeavysnowshowersNight: 'heavysnowshowers_night',
+    HeavysnowshowersPolartwilight: 'heavysnowshowers_polartwilight'
+} as const;
+
+export type WeatherSymbol = typeof WeatherSymbol[keyof typeof WeatherSymbol];
+
+
 
 /**
  * DataApi - axios parameter creator
@@ -1406,40 +1488,40 @@ export class DataApi extends BaseAPI {
 }
 
 /**
-  * @export
-  * @enum {string}
-  */
-export enum ClassicFormatGetFormatEnum {
-    Xml = 'xml'
-}
+ * @export
+ */
+export const ClassicFormatGetFormatEnum = {
+    Xml: 'xml'
+} as const;
+export type ClassicFormatGetFormatEnum = typeof ClassicFormatGetFormatEnum[keyof typeof ClassicFormatGetFormatEnum];
 /**
-  * @export
-  * @enum {string}
-  */
-export enum CompactFormatGetFormatEnum {
-    Json = 'json'
-}
+ * @export
+ */
+export const CompactFormatGetFormatEnum = {
+    Json: 'json'
+} as const;
+export type CompactFormatGetFormatEnum = typeof CompactFormatGetFormatEnum[keyof typeof CompactFormatGetFormatEnum];
 /**
-  * @export
-  * @enum {string}
-  */
-export enum CompleteFormatGetFormatEnum {
-    Json = 'json'
-}
+ * @export
+ */
+export const CompleteFormatGetFormatEnum = {
+    Json: 'json'
+} as const;
+export type CompleteFormatGetFormatEnum = typeof CompleteFormatGetFormatEnum[keyof typeof CompleteFormatGetFormatEnum];
 /**
-  * @export
-  * @enum {string}
-  */
-export enum MiniFormatGetFormatEnum {
-    Json = 'json'
-}
+ * @export
+ */
+export const MiniFormatGetFormatEnum = {
+    Json: 'json'
+} as const;
+export type MiniFormatGetFormatEnum = typeof MiniFormatGetFormatEnum[keyof typeof MiniFormatGetFormatEnum];
 /**
-  * @export
-  * @enum {string}
-  */
-export enum StatusFormatGetFormatEnum {
-    Json = 'json'
-}
+ * @export
+ */
+export const StatusFormatGetFormatEnum = {
+    Json: 'json'
+} as const;
+export type StatusFormatGetFormatEnum = typeof StatusFormatGetFormatEnum[keyof typeof StatusFormatGetFormatEnum];
 
 
 /**

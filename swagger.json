@@ -378,6 +378,7 @@
       "type": "object"
     },
     "WeatherSymbol": {
+      "type": "string",
       "description": "A identifier that sums up the weather condition for this time period, see documentation.",
       "enum": [
         "clearsky_day",
